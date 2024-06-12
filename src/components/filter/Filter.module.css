@@ -1,0 +1,22 @@
+.container__filter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* background-color: #171717; */
+  justify-content: start;
+  align-items: end;
+  animation: fadeIn 0.5s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

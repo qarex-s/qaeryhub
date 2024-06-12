@@ -1,0 +1,17 @@
+.container__recomendation {
+  width: 100%;
+  margin-top: var(--mg-top);
+}
+.title__info {
+  font-size: 24px;
+}
+.title__info p {
+  font-weight: 300;
+}
+.desc__info {
+  margin-left: 30px;
+  font-size: 20px;
+  margin-top: var(--mg-top-min);
+  color: #ababab;
+  overflow-wrap: break-word;
+}

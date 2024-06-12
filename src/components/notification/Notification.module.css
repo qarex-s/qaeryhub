@@ -1,0 +1,51 @@
+.container__notification__modal {
+  background-color: rgb(49, 49, 49);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: -450px;
+  top: 83%;
+  transform: translate(-140%);
+  height: 60px;
+  width: 400px;
+  color: white;
+  font-size: 24px;
+  z-index: 550;
+  animation: message__info__anim 5s forwards;
+  background: var(--background--message--save);
+  background-size: 300% 300%;
+}
+.title__notification {
+  margin-top: 15px;
+}
+
+@keyframes message__info__anim {
+  0% {
+    transform: translate(0%);
+    background-position: 0 50%;
+  }
+
+  25% {
+    transform: translate(-140%);
+    background-position: 50% 70%;
+  }
+  50% {
+    opacity: 1;
+    background-position: 100% 100%;
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-140%);
+  }
+  87% {
+    transform: translate(-140%);
+    background-position: 200% 50%;
+    transform: translate(-140%, -19%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    background-position: 300% 50%;
+  }
+}

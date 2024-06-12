@@ -1,0 +1,75 @@
+.container__filter__block {
+  width: 95%;
+  margin-top: var(--mg-top);
+  height: 530px;
+
+  background: var(--background-filter-section);
+  background: linear-gradient(180deg, #9e9ba3 0%, #788196 100%);
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  transition: transform 0.2s ease-out;
+  transition-property: all;
+  transform-origin: center;
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.wrapper__filter__block {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-filter-section);
+
+  border-radius: 12px;
+
+  position: relative;
+}
+.wrapper__filter__block::before {
+  content: "";
+  background: var(--border-gradient--active--btn);
+  height: 532px;
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  position: absolute;
+  z-index: -1;
+  border-radius: 12px;
+}
+.sortedInfo {
+  height: 25px;
+  width: 90%;
+  margin: var(--mg-top-min) 0;
+  background-color: #5a5a5a;
+  font-size: 18px;
+  background: var(--text-gradient);
+  background-clip: text;
+  color: var(--text-filter-title);
+}
+.sortedInfo p {
+  font-weight: 400;
+}
+.sortedItem {
+  text-align: start;
+  margin: var(--mg-top-min) 0;
+}
+.sortedList {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 90%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

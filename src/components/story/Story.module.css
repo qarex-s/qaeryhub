@@ -1,0 +1,28 @@
+.container__story {
+  margin: var(--mg-top) 0;
+  height: 620px;
+  width: 90%;
+  background: var(--background-story);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title__story {
+  height: auto;
+  margin: var(--mg-top-min) 0;
+  font-size: 32px;
+  color: var(--text-white);
+  width: 100%;
+}
+.virtual__table {
+  height: 550px;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.virtual__table::-webkit-scrollbar {
+  width: 0%;
+}

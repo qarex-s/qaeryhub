@@ -1,0 +1,6 @@
+.wrapper__line {
+  height: 100%;
+  width: 1px;
+  background: var(--sep-line-vertical-gradient);
+  opacity: 0.8;
+}

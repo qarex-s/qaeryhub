@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  /* ____________________________________________________ HEADER */
+
+  --color-header: #fff;
+  --font-weight-header: 200;
+  --header-gradient: linear-gradient(90deg, #3532b1 0%, #80437e 100%);
+  --border-gradient--active--btn: linear-gradient(
+    145deg,
+    #343b53 0%,
+    #683c3c 50%,
+    #343b53 100%
+  );
+  /* ____________________________________________________ RECOMENDATION */
+
+  --background-recomends-section: linear-gradient(
+    180deg,
+    #202020 0%,
+    #151515 100%
+  );
+
+  /* ____________________________________________________ METRICS */
+
+  --background-metrics-v2: linear-gradient(
+    90deg,
+    #343b53 0%,
+    #553232 50%,
+    #343b53 100%
+  );
+  --background-metrics-v2: #151515;
+  /* ____________________________________________________ FILTER */
+
+  --background-checked: #202020;
+
+  --text-checked: transparent;
+  --text-filter-title: transparent;
+  --text-filter-title-query: #c8c8c8;
+  --text-filter-query: #8781a9;
+  --text-additional-info: #878787;
+  --background-filter-section: linear-gradient(
+    180deg,
+    #202020 0%,
+    #151515 100%
+  );
+  /* ____________________________________________________ DIAGNOSTIC-ITEM */
+  --diagnostic-item: #1d1d1d;
+  --text-diagnostic-item: transparent;
+
+  /* ____________________________________________________ SHADOW-BLOCK */
+  --shadow-size-background: 0px;
+  --shadow-size-items: 0px;
+  /* ____________________________________________________SEARCH BAR */
+  --text-white: #d3d3d3;
+  --text-placeholder: #d3d3d3;
+  --background-search-bar: #151515;
+  /* ____________________________________________________STORY ROW */
+  --story-row-first: #1e1e1e;
+  --story-row-second: #181818;
+  --story-row-hover: #343434;
+  --text-story-row: #d3d3d3;
+  --text-weight-story: 400;
+  /* ____________________________________________________MAIN */
+  --main-background: #040404;
+  --text-weight: 300;
+  /* ____________________________________________________MARGINE */
+  --mg-top: 30px;
+  --mg-top-min: 15px;
+  --mg-top-big: 45px;
+  --mg-top-big-60: 60px;
+
+  /* ____________________________________________________BTN__STYLE */
+  --btn-gradient-check2: linear-gradient(90deg, #7b95bc 0%, #000000 100%);
+  --btn-gradient-check: linear-gradient(90deg, #7b95bc 0%, #9d6abc 100%);
+  --btn-gradient-delete: linear-gradient(90deg, #a84b7a 0%, #994c4c 100%);
+  --btn-fill-delete: #92344a;
+
+  --background--btn--back: linear-gradient(
+    90deg,
+    #5d2b2b 0%,
+    #333260 25%,
+    #80437e 60%,
+    #5d2b2b 100%
+  );
+  --background-btn-save: linear-gradient(
+    90deg,
+    rgb(72, 51, 61) 0%,
+    #3d2e48 25%,
+    #533537 50%,
+    #43334e 75%,
+
+    rgb(72, 51, 61) 100%
+  );
+
+  /* ____________________________________________________BACKGROUND STYLE */
+
+  --background-sorted-active: linear-gradient(145deg, #2e2488 0%, #8a3a8b 100%);
+  --background-sorted: linear-gradient(90deg, #3c334f 0%, #6d406d 100%);
+  --btn-gradient: linear-gradient(
+    145deg,
+    #5d2b2b -50%,
+    #333260 50%,
+    #80437e 150%
+  );
+  --btn-gradient-hover: linear-gradient(
+    145deg,
+    #813b3b -50%,
+    #46457e 50%,
+    #a559a3 150%
+  );
+  --background-story: linear-gradient(
+    0deg,
+    #141414 0%,
+    #140e16 50%,
+    #0f0f0f 100%
+  );
+
+  --background--message--save: linear-gradient(
+    90deg,
+    #5d2b2b 0%,
+    #333260 50%,
+    #5c2f59 75%,
+    #5d2b2b 100%
+  );
+
+  --background-metrics: linear-gradient(
+    90deg,
+    #343b53 0%,
+    #683c3c 50%,
+    #343b53 100%
+  );
+  --background-recomendation-section: linear-gradient(
+    0deg,
+    #343b53 0%,
+    #683c3c 50%,
+    #343b53 100%
+  );
+  --background-gradient: linear-gradient(
+    180deg,
+    #151515 0%,
+    #151219 50%,
+    #151515 100%
+  );
+  /* LIGHT */
+
+  --background-gradient-light: linear-gradient(
+    180deg,
+    #bebebe 0%,
+    #afabbe 50%,
+    #bebebe 100%
+  );
+  --background-story-light: linear-gradient(
+    0deg,
+    #b99797 0%,
+    #9c87b3 50%,
+    #977a93 100%
+  );
+  /* ____________________________________________________TEXT STYLE */
+  --text-gradient: linear-gradient(90deg, #94bfff 0%, #ce7fff 100%);
+  --text-sorted-list-gradient: linear-gradient(90deg, #c777d3 0%, #768fb5 100%);
+  --text-info-general-title: linear-gradient(45deg, #a87fff 40%, #ff51a5 100%);
+  --text-error-searching: rgb(222, 109, 109);
+  --text-finding-gradient: linear-gradient(
+    90deg,
+    #7b71e4 0%,
+    #bd6363 25%,
+    #6b6fd7 50%,
+    #6bc0d7 75%,
+    #7b71e4 100%
+  );
+  --text-error-text-gradient: linear-gradient(
+    90deg,
+    #c271e4 0%,
+    #c63838 25%,
+    #d76bce 50%,
+    #c0d76b 75%,
+    #c271e4 100%
+  );
+  /* ____________________________________________________BORDER STYLE */
+  --border-gradient: linear-gradient(90deg, #3532b1 0%, #80437e 100%);
+
+  /* ____________________________________________________LOGO STYLE */
+
+  --logo-gradient: linear-gradient(90deg, #534e90 0%, #be6166 100%);
+
+  /* ____________________________________________________SEPLINE STYLE */
+  --sep-line-gradient: linear-gradient(
+    90deg,
+    #25181828 0%,
+    #d37be4 50%,
+    #2518182e 100%
+  );
+  --sep-line-vertical-gradient: linear-gradient(
+    0deg,
+    #251818 0%,
+    #d37be4 50%,
+    #251818 100%
+  );
+
+  /* ____________________________________________________LOADER STYLE */
+  --loader-color: #cac5ff;
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

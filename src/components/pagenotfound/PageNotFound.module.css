@@ -1,0 +1,43 @@
+.container__page__not__found {
+  margin-top: var(--mg-top);
+  min-height: 100vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--background-gradient);
+  color: wheat;
+}
+.title__area {
+  height: 50%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 4.5vw;
+  background: var(--text-error-text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 300%;
+  animation: animGradient 8s linear infinite;
+}
+.text__page__not__found {
+  font-weight: 800;
+}
+
+@keyframes animGradient {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 70%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}

@@ -1,0 +1,38 @@
+.container__block__result__metric {
+  height: 75px;
+  width: 340px;
+  /* background-color: rgb(156, 156, 156); */
+  display: flex;
+  text-align: start;
+  margin-top: 15px;
+  margin-left: 5%;
+}
+.separate__metrics {
+  width: 10px;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: end;
+}
+.info__metric {
+  width: 330px;
+  height: 100%;
+  /* background: #708f74; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info__metric p {
+  font-weight: 600;
+}
+.title__metric {
+  margin-left: 24px;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.result__metric {
+  margin-top: 5px;
+  margin-left: 24px;
+  font-size: 28px;
+  font-weight: 300;
+}

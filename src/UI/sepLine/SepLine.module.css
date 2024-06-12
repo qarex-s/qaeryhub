@@ -1,0 +1,21 @@
+.wrapper__line {
+  height: 1px;
+  width: 90%;
+  background: var(--sep-line-gradient);
+
+  opacity: 0.8;
+  z-index: 500;
+  animation: fadeIn 0.5s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

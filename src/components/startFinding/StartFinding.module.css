@@ -1,0 +1,35 @@
+.container__style__finding {
+  width: 200%;
+  height: 400px;
+  /* background-color: aliceblue; */
+}
+.title__style__finding {
+  margin-top: var(--mg-top-min);
+  font-size: 3.5vw;
+  background: var(--text-finding-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 300% 300%;
+  animation: animGradient 8s linear infinite;
+}
+.text__style__finding {
+  font-weight: 800;
+}
+
+@keyframes animGradient {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 70%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}

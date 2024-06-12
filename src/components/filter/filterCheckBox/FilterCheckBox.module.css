@@ -1,0 +1,50 @@
+.sortedItem {
+  margin-top: var(--mg-top-min);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.wrapper__checkbox {
+  border: 1px solid var(--text-white);
+  height: 25px;
+  width: 25px;
+  position: relative;
+  display: flex;
+  margin-left: var(--mg-top-min);
+}
+.sortedInput {
+  height: 25px;
+  width: 25px;
+  z-index: 1;
+}
+.sortedInput::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--background-checked);
+  /* background: #aeb0c1; */
+  z-index: 2;
+  opacity: 1;
+}
+.sortedInput:checked::before {
+  content: "";
+  opacity: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--background-sorted-active);
+  z-index: 2;
+}
+
+.sortedLabel {
+  display: flex;
+  cursor: pointer;
+}
+.sortedItem__text {
+  margin-left: 10px;
+  background: var(--text-sorted-list-gradient);
+  background-clip: text;
+  color: var(--text-checked);
+  font-weight: 300;
+}
