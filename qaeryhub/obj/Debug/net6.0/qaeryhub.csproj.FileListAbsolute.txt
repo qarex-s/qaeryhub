@@ -1,0 +1,84 @@
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\appsettings.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.exe
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.deps.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.runtimeconfig.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.pdb
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Humanizer.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Npgsql.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.csproj.AssemblyReference.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.AssemblyInfoInputs.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.AssemblyInfo.cs
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.csproj.CoreCompileInputs.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.qaeryhub.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.build.qaeryhub.props
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.qaeryhub.props
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.qaeryhub.props
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\scopedcss\bundle\qaeryhub.styles.css
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.csproj.CopyComplete
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\refint\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.pdb
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.genruntimeconfig.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\ref\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\appsettings.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.exe
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.deps.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.runtimeconfig.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\qaeryhub.pdb
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Humanizer.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Npgsql.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.csproj.AssemblyReference.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.AssemblyInfoInputs.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.AssemblyInfo.cs
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.csproj.CoreCompileInputs.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.qaeryhub.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.build.qaeryhub.props
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.qaeryhub.props
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.qaeryhub.props
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\scopedcss\bundle\qaeryhub.styles.css
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.csproj.CopyComplete
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\refint\qaeryhub.dll
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.pdb
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\qaeryhub.genruntimeconfig.cache
+C:\Users\gtau9\Desktop\DYPLOMKA\main dyplomka\qaeryhub\qaeryhub\qaeryhub\obj\Debug\net6.0\ref\qaeryhub.dll
