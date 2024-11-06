@@ -140,6 +140,12 @@
     #151219 50%,
     #151515 100%
   );
+  --background-gradient-darkest: linear-gradient(
+    180deg,
+    #131313 0%,
+    #17141c 50%,
+    #131313 100%
+  );
   /* LIGHT */
 
   --background-gradient-light: linear-gradient(

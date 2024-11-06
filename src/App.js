@@ -7,6 +7,7 @@ import PageNotfound from "./components/pagenotfound/PageNotfound";
 import { useSelector } from "react-redux";
 import History from "./components/history/History";
 import { setColorTheme } from "./services/colorTheme/setColorTheme";
+import LoginForm from "./components/auth/LoginForm";
 function App() {
   const selector = useSelector((state) => state.pageSpeed);
   const colorTheme = setColorTheme(selector.colorTheme);
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Comparing" element={<Comparing />} />
           <Route path="/History" element={<History />} />
+          <Route path="/Login" element={<LoginForm />} />
           <Route path="/*" element={<PageNotfound />} />
         </Route>
       </Routes>

@@ -1,0 +1,48 @@
+.btn__simple {
+  height: 35px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--mg-top-min) 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(137, 65, 173, 0.191);
+  background: var(--background-search-bar);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300;
+  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.467); */
+  color: rgb(186, 186, 186);
+  background-size: 300% 300%;
+  animation: animGradient 8s linear infinite;
+  transition: transform 0.2s ease-out;
+  transition-property: all;
+  transform-origin: center;
+}
+.btn__simple:last-child {
+  margin: var(--mg-top-min) 0px;
+}
+
+.btn__simple:hover {
+  transform: scale(1);
+  color: rgb(233, 233, 233);
+  background-size: 500% 500%;
+  box-shadow: 0px 0px 12px 2px rgba(12, 12, 12, 0.467);
+}
+@keyframes animGradient {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 50% 70%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}

@@ -1,0 +1,20 @@
+.container__field__input {
+  height: 45px;
+  width: 60%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  background-color: var(--background-search-bar);
+  border-radius: 12px;
+  font-size: 20px;
+  padding-left: 20px;
+  color: var(--text-white);
+  border-bottom: 2px solid rgb(123, 52, 52);
+  margin: 10px;
+}
+.container__field__input::placeholder {
+  font-size: 20px;
+}
