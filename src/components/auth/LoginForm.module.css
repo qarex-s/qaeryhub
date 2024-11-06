@@ -3,7 +3,6 @@
   margin-bottom: var(--mg-top-big);
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   min-height: 90vh;

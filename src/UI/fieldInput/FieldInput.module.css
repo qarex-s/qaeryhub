@@ -1,5 +1,5 @@
 .container__field__input {
-  height: 45px;
+  height: 42px;
   width: 60%;
   background-color: antiquewhite;
   display: flex;
@@ -9,12 +9,14 @@
   border: none;
   background-color: var(--background-search-bar);
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 20px;
   color: var(--text-white);
   border-bottom: 2px solid rgb(123, 52, 52);
   margin: 10px;
+  font-weight: 300;
 }
 .container__field__input::placeholder {
-  font-size: 20px;
+  font-size: 18px;
+  color: var(--text-white);
 }

@@ -1,6 +1,7 @@
 .btn__simple {
   height: 35px;
-  width: 100px;
+  min-width: 80px;
+  padding: 0px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,9 +11,9 @@
   background: var(--background-search-bar);
   cursor: pointer;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.467); */
-  color: rgb(186, 186, 186);
+  color: var(--text-white);
   background-size: 300% 300%;
   animation: animGradient 8s linear infinite;
   transition: transform 0.2s ease-out;
@@ -25,7 +26,7 @@
 
 .btn__simple:hover {
   transform: scale(1);
-  color: rgb(233, 233, 233);
+  color: var(--text-white);
   background-size: 500% 500%;
   box-shadow: 0px 0px 12px 2px rgba(12, 12, 12, 0.467);
 }

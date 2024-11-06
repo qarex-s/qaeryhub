@@ -1,12 +1,15 @@
 import React from "react";
-import Style from "./LoginField.module.css";
 import FieldInput from "../../../UI/fieldInput/FieldInput";
 import BtnSimple from "../../../UI/btnSimple/BtnSimple";
-const LoginField = ({ setLoginType }) => {
+import Style from "./SignInField.module.css";
+const SignInField = ({ setLoginType }) => {
   return (
     <div className={Style.container__login__field}>
+      <FieldInput placeholder={"FIRST_NAME"} />
+      <FieldInput placeholder={"LAST_NAME"} />
       <FieldInput placeholder={"LOGIN"} />
       <FieldInput placeholder={"PASSWORD"} />
+      <FieldInput placeholder={"CONFIRM PASS"} />
       <div
         style={{
           width: "60%",
@@ -15,11 +18,11 @@ const LoginField = ({ setLoginType }) => {
           marginLeft: "20px",
         }}
       >
-        <BtnSimple onClick={setLoginType}>Sign In</BtnSimple>
-        <BtnSimple>Log In</BtnSimple>
+        <BtnSimple onClick={setLoginType}>Back to LOGIN</BtnSimple>
+        <BtnSimple>Register</BtnSimple>
       </div>
     </div>
   );
 };
 
-export default LoginField;
+export default SignInField;

@@ -68,6 +68,8 @@ export const setColorTheme = (colorTheme) => {
         "--main-background": "#b5b5b5",
         "--background-gradient":
           "linear-gradient(180deg,#bebebe 0%,#afabbe 50%,#bebebe 100%)",
+        "--background-gradient-darkest":
+          "linear-gradient(180deg,#bebebe 0%,#afabbe 50%,#bebebe 100%)",
         //____________________________________________________________STORY
         "--background-story":
           "linear-gradient(180deg, #9899a9 0%, #a299a2 50%, #bababa 100%)",
