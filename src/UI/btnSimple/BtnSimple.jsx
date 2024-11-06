@@ -1,8 +1,12 @@
 import React, { Children } from "react";
 import Style from "./BtnSimple.module.css";
-const BtnSimple = ({ onClick, children }) => {
+const BtnSimple = ({ ownStyle, onClick, children }) => {
   return (
-    <div className={Style.btn__simple} onClick={onClick}>
+    <div
+      className={Style.btn__simple}
+      style={{ ...ownStyle }}
+      onClick={onClick}
+    >
       {children}
     </div>
   );

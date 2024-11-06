@@ -73,6 +73,13 @@ export const setColorTheme = (colorTheme) => {
         //____________________________________________________________STORY
         "--background-story":
           "linear-gradient(180deg, #9899a9 0%, #a299a2 50%, #bababa 100%)",
+        //____________________________________________________________PROFILE
+        "--text-short-info-user":
+          "linear-gradient(180deg, #202020 0%, #151515 50%, #202020 100%)",
+        "--text-short-info-user-list-used":
+          "linear-gradient(180deg, #343b53 0%, #683c3c 50%, #343b53 100%)",
+        "--btn-simple-gradient":
+          "linear-gradient(90deg, #798ac0 0%, rgb(198, 114, 134) 100%)",
       }
     : {};
 };

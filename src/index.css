@@ -69,6 +69,13 @@
   --mg-top-big-60: 60px;
 
   /* ____________________________________________________BTN__STYLE */
+  --btn-simple-gradient: linear-gradient(50deg, #333260 10%, #80437e 100%);
+  --btn-simple-gradient: linear-gradient(50deg, #333260 10%, #80437e 100%);
+  --btn-simple-gradient-white-theme: linear-gradient(
+    50deg,
+    #333260 10%,
+    #80437e 100%
+  );
   --btn-gradient-check2: linear-gradient(90deg, #7b95bc 0%, #000000 100%);
   --btn-gradient-check: linear-gradient(90deg, #7b95bc 0%, #9d6abc 100%);
   --btn-gradient-delete: linear-gradient(90deg, #a84b7a 0%, #994c4c 100%);
@@ -180,6 +187,14 @@
     #d76bce 50%,
     #c0d76b 75%,
     #c271e4 100%
+  );
+  /* ________________________________________PROFILE STYLE */
+  --text-short-info-user: linear-gradient(45deg, #e59bff 40%, #ffa775 100%);
+  --text-short-info-user-list-used: linear-gradient(
+    0deg,
+    #424b9f 0%,
+    #ff54d9 50%,
+    #424b9f 100%
   );
   /* ____________________________________________________BORDER STYLE */
   --border-gradient: linear-gradient(90deg, #3532b1 0%, #80437e 100%);
