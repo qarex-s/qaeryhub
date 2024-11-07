@@ -13,6 +13,11 @@ namespace qaeryhub.Data
         public DbSet<PerformanceCategory> PerformanceCategory { get; set; }
         public DbSet<Audits> Audits { get;set; }
         public DbSet<Metrics> Metrics { get;set; }
+        public DbSet<Users> Users { get;set; }
+        public DbSet<UserDescription> UserDescription { get;set; }
+        public DbSet<Roles> Roles { get;set; }
+        public DbSet<UsersRoles> UsersRoles { get;set; }
+        public DbSet<BlockedUsers> BlockedUsers { get;set; }
 
 
     }

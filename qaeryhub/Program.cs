@@ -1,6 +1,10 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using qaeryhub.Data;
 using qaeryhub.Services;
+using qaeryhub.Services.Auth;
+using System.Text;
 
 namespace qaeryhub
 {
@@ -11,7 +15,27 @@ namespace qaeryhub
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            //jwt
+            var jwtIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>();
+            var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>();
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtIssuer,
+                    ValidAudience = jwtIssuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey)),
+                }
+
+                );
+
+
             builder.Services.AddScoped<ICRUDPerformance, CRUDPerformance>();
+            builder.Services.AddScoped<IAuthIdentity, AuthIdentity>();
             builder.Services.AddControllers();
             builder.Services.AddCors(options => options
                 .AddPolicy("allowReactApp", optPolicy => optPolicy
@@ -35,8 +59,8 @@ namespace qaeryhub
             app.UseHttpsRedirection();
             app.UseCors("allowReactApp");
 
+            app.UseAuthentication();
             app.UseAuthorization();
-
 
             app.MapControllers();
 

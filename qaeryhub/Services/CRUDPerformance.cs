@@ -3,6 +3,7 @@ using qaeryhub.Data;
 using qaeryhub.Models.Dto;
 using Microsoft.EntityFrameworkCore;
 using qaeryhub.Models;
+using Microsoft.AspNetCore.Authorization;
 namespace qaeryhub.Services
 {
     public class CRUDPerformance : ICRUDPerformance

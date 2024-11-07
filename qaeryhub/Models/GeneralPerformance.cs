@@ -12,6 +12,10 @@ namespace qaeryhub.Models
         public int AverageValue { get; set; }
         public string FormFactor { get; set; }
         public DateTimeOffset TimeTesting { get; set; }
+
+        public int? UserId { get; set; }
+        [ForeignKey("UserId")]
+        public Users SomeUsers { get; set; }
        
 
 

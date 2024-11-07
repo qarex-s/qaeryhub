@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oYc3OJZTREKEzgHzzCVT3ihYmP7slf68HK1aS0szCxJutD5h4WMBv/2dNwLpwc97zBmTLTWl8sXaWXfouymyDw==",
+  "dgSpecHash": "cj8ZfbJhjo0P7xG+D+gSRGPFfBB6Iq3KXkh4hgdnwyVFPN1FFHiNbPYPzLPdW60AOT7wHISF/Dz+EycVsC+3GQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gtau9\\Desktop\\DYPLOMKA\\main dyplomka\\qaeryhub\\qaeryhub\\qaeryhub\\qaeryhub.csproj",
+  "projectFilePath": "D:\\МАГІСТРАТУРА\\Qaeryhub\\qaeryhubbackend\\qaeryhub\\qaeryhub\\qaeryhub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gtau9\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.35\\microsoft.aspnetcore.authentication.jwtbearer.6.0.35.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.30\\microsoft.entityframeworkcore.6.0.30.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.30\\microsoft.entityframeworkcore.abstractions.6.0.30.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.30\\microsoft.entityframeworkcore.analyzers.6.0.30.nupkg.sha512",
@@ -21,6 +23,12 @@
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.36.0\\microsoft.identitymodel.abstractions.6.36.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.36.0\\microsoft.identitymodel.jsonwebtokens.6.36.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.identitymodel.logging\\6.36.0\\microsoft.identitymodel.logging.6.36.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.35.0\\microsoft.identitymodel.protocols.6.35.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.35.0\\microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.36.0\\microsoft.identitymodel.tokens.6.36.0.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\npgsql\\6.0.11\\npgsql.6.0.11.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.29\\npgsql.entityframeworkcore.postgresql.6.0.29.nupkg.sha512",
@@ -30,7 +38,9 @@
     "C:\\Users\\gtau9\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\gtau9\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
-    "C:\\Users\\gtau9\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\gtau9\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.36.0\\system.identitymodel.tokens.jwt.6.36.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\gtau9\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using qaeryhub.Data;
@@ -11,9 +12,10 @@ using qaeryhub.Data;
 namespace qaeryhub.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241107103531_adding-user-tables")]
+    partial class addingusertables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -103,12 +105,7 @@ namespace qaeryhub.Migrations
                     b.Property<DateTimeOffset>("TimeTesting")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("GeneralPerformances");
                 });
@@ -276,15 +273,6 @@ namespace qaeryhub.Migrations
                         .IsRequired();
 
                     b.Navigation("SomeUser");
-                });
-
-            modelBuilder.Entity("qaeryhub.Models.GeneralPerformance", b =>
-                {
-                    b.HasOne("qaeryhub.Models.Users", "SomeUsers")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("SomeUsers");
                 });
 
             modelBuilder.Entity("qaeryhub.Models.Metrics", b =>

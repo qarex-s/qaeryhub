@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
@@ -20,6 +21,7 @@ namespace qaeryhub.Controllers
             _ctx = ctx;
             _crudPerformance = crudPerformance;
         }
+        
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -34,7 +36,7 @@ namespace qaeryhub.Controllers
             
         }
 
-
+        [Authorize]
         [HttpGet("{id}")]
         public  async Task<IActionResult> GetById(int id)
         {
