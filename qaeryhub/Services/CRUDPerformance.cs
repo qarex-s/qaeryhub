@@ -4,18 +4,34 @@ using qaeryhub.Models.Dto;
 using Microsoft.EntityFrameworkCore;
 using qaeryhub.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
 namespace qaeryhub.Services
 {
     public class CRUDPerformance : ICRUDPerformance
     {
 
         private ApplicationDbContext _ctx;
-        public CRUDPerformance(ApplicationDbContext ctx) {
+        private readonly IHttpContextAccessor _contextAccessor;
+
+        public CRUDPerformance(ApplicationDbContext ctx, IHttpContextAccessor contextAccessor) {
             _ctx = ctx;
+            _contextAccessor = contextAccessor;
         }
         public async Task<List<DtoGetGeneralPerformance>> GetAll()
         {
-            var generalPerformance = await _ctx.GeneralPerformances.ToListAsync();
+            var userName = _contextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            
+            if(userName == null)
+            {
+                return null;
+            }
+            var someUser = _ctx.Users.FirstOrDefault(u=>u.UserName == userName);
+            
+
+            var generalPerformance = await _ctx.GeneralPerformances
+                .Where(g=>g.UserId == someUser.UserId)
+                .ToListAsync();
             List<DtoGetGeneralPerformance> dtoGetGeneralPerformance = generalPerformance
                 .Select(p => new DtoGetGeneralPerformance
                 {

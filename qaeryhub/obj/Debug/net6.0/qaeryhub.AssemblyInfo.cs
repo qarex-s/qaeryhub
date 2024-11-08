@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("qaeryhub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaba8c2dd87a4069aaf607d5baeab33d931eca93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d1eea25cc787360508d6da81021be290657c1b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("qaeryhub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("qaeryhub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

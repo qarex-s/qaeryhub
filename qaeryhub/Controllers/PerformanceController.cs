@@ -17,9 +17,11 @@ namespace qaeryhub.Controllers
     {
         private ApplicationDbContext _ctx;
         private ICRUDPerformance _crudPerformance;
-        public PerformanceController(ApplicationDbContext ctx,ICRUDPerformance crudPerformance) {
+        private readonly IHttpContextAccessor _contextAccessor;
+        public PerformanceController(ApplicationDbContext ctx,ICRUDPerformance crudPerformance, IHttpContextAccessor httpContextAccessor) {
             _ctx = ctx;
             _crudPerformance = crudPerformance;
+            _contextAccessor = httpContextAccessor;
         }
         
         [HttpGet]
