@@ -22,6 +22,7 @@ const initialState = {
 
 const api = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed";
 const apiStory = "https://localhost:7013/api/Performance/";
+const tokenJwt = localStorage.getItem("authToken");
 
 export const fetchDeleteItemFromStory = createAsyncThunk(
   "pageSpeed/fetchDeleteItemFromStory",
@@ -30,6 +31,10 @@ export const fetchDeleteItemFromStory = createAsyncThunk(
     try {
       const queryResult = await fetch(apiStoryByItemId, {
         method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${tokenJwt}`,
+        },
       });
 
       if (!queryResult.ok) {
@@ -47,7 +52,15 @@ export const fetchGetItemPageSpeedFromStory = createAsyncThunk(
   async ({ speedPageId }, { rejectWithValue }) => {
     const apiStoryByItemId = apiStory + speedPageId;
     try {
-      const queryResult = await fetch(apiStoryByItemId);
+      const queryResult = await fetch(apiStoryByItemId, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${tokenJwt}`,
+        },
+      });
+      console.log("Test request-auth", `${tokenJwt}`);
+
       if (!queryResult.ok) {
         throw new Error("Failed to fetch data. \nCode: " + queryResult.status);
       }
@@ -62,7 +75,13 @@ export const fetchGetAllStoryPageSpeed = createAsyncThunk(
   "pageSpeed/fetchStoryPageSpeed",
   async (_, { rejectWithValue }) => {
     try {
-      const dataPageSpeed = await fetch(apiStory);
+      const dataPageSpeed = await fetch(apiStory, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${tokenJwt}`,
+        },
+      });
       if (!dataPageSpeed.ok) {
         throw new Error(
           "Failed to fetch data. \nCode: " + dataPageSpeed.status
@@ -81,7 +100,13 @@ export const fetchItemPageSpeedFromStory = createAsyncThunk(
   async ({ speedPageId }, { dispatch, rejectWithValue }) => {
     const apiStoryByItemId = apiStory + speedPageId;
     try {
-      const dataPageSpeed = await fetch(apiStoryByItemId);
+      const dataPageSpeed = await fetch(apiStoryByItemId, {
+        method: "GET",
+        headers: {
+          "Content-Type": "appliaction/json",
+          "Authorization": `Bearer ${tokenJwt}`,
+        },
+      });
       if (!dataPageSpeed.ok) {
         throw new Error(
           "Failed to fetch data. \nCode: " + dataPageSpeed.status
@@ -113,7 +138,13 @@ export const fetchPageSpeed = createAsyncThunk(
         someQuery += `&category=${element}`;
       });
 
-      const dataServerInfo = await fetch(someQuery);
+      const dataServerInfo = await fetch(someQuery, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          //"Authorization": `Bearer ${tokenJwt}`,
+        },
+      });
       if (!dataServerInfo.ok) {
         throw new Error(
           "Failed to fetch data. \nCode: " + dataServerInfo.status

@@ -7,10 +7,11 @@ export const createAudits = (dataPerformanceSelector) => {
 
   fetch(urlAspNet, {
     method: "POST",
-    body: JSON.stringify(objAudits),
     headers: {
       "Content-Type": "application/json",
+      "Authorization": `Bearer ${localStorage.getItem("authToken")}`,
     },
+    body: JSON.stringify(objAudits),
   }).then((resp) => resp.json());
   // alert("work");
 };
