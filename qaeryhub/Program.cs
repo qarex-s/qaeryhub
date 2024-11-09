@@ -15,6 +15,9 @@ namespace qaeryhub
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddHttpContextAccessor();
+
+
             //jwt
             var jwtIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>();
             var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>();

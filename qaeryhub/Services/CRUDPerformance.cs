@@ -20,14 +20,14 @@ namespace qaeryhub.Services
         }
         public async Task<List<DtoGetGeneralPerformance>> GetAll()
         {
-            var userName = _contextAccessor.HttpContext?.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+            var userEmail = _contextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
             
-            if(userName == null)
+            if(userEmail == null)
             {
                 return null;
             }
-            var someUser = _ctx.Users.FirstOrDefault(u=>u.UserName == userName);
-            
+            var someUser = _ctx.Users.FirstOrDefault(u=>u.Email == userEmail);
+            Console.WriteLine(someUser);
 
             var generalPerformance = await _ctx.GeneralPerformances
                 .Where(g=>g.UserId == someUser.UserId)
@@ -134,10 +134,15 @@ namespace qaeryhub.Services
 
         public async Task<GeneralPerformance> Create([FromBody] DtoCreateGeneralPerformane DtoGeneralPerformance)
         {
-            if (DtoGeneralPerformance == null || DtoGeneralPerformance.PerformanceCategory == null)
+            var userEmail= _contextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (DtoGeneralPerformance == null || DtoGeneralPerformance.PerformanceCategory == null || userEmail == null)
             {
                 return null;
             }
+
+            var someUser = await _ctx.Users
+                .FirstOrDefaultAsync(u=>u.Email == userEmail);
 
             var generalPerformanceNew = new GeneralPerformance();
             generalPerformanceNew.SiteUrl = DtoGeneralPerformance.SiteUrl;
@@ -145,6 +150,7 @@ namespace qaeryhub.Services
             generalPerformanceNew.GeneralValue = DtoGeneralPerformance.GeneralValue;
             generalPerformanceNew.FormFactor = DtoGeneralPerformance.FormFactor;
             generalPerformanceNew.TimeTesting = DtoGeneralPerformance.fetchingDate;
+            generalPerformanceNew.UserId = someUser.UserId;
 
             await _ctx.GeneralPerformances.AddAsync(generalPerformanceNew);
             await _ctx.SaveChangesAsync();

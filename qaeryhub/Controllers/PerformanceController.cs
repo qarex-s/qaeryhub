@@ -17,11 +17,9 @@ namespace qaeryhub.Controllers
     {
         private ApplicationDbContext _ctx;
         private ICRUDPerformance _crudPerformance;
-        private readonly IHttpContextAccessor _contextAccessor;
-        public PerformanceController(ApplicationDbContext ctx,ICRUDPerformance crudPerformance, IHttpContextAccessor httpContextAccessor) {
+        public PerformanceController(ApplicationDbContext ctx,ICRUDPerformance crudPerformance) {
             _ctx = ctx;
             _crudPerformance = crudPerformance;
-            _contextAccessor = httpContextAccessor;
         }
         
         [HttpGet]
@@ -30,7 +28,7 @@ namespace qaeryhub.Controllers
             var allGeneralPerformances = await _crudPerformance.GetAll();
             if (allGeneralPerformances == null)
             {
-                return BadRequest("Bad request for getting all general performances");
+                return StatusCode(404,"Bad request for getting all general performances");
             }
 
 

@@ -26,8 +26,8 @@ namespace qaeryhub.Services.Auth
 
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.Sub,dtoAuthUserCred.UserName),
-                new Claim(JwtRegisteredClaimNames.Email,dtoAuthUserCred.Email),
+                new Claim(ClaimTypes.NameIdentifier,dtoAuthUserCred.Email),
+                new Claim(ClaimTypes.Email, dtoAuthUserCred.Email),
             };
 
             var SecToken = new JwtSecurityToken(
@@ -66,7 +66,7 @@ namespace qaeryhub.Services.Auth
                     Password = dtoSignInUser.Password,
                     FirstName = dtoSignInUser.FirstName,
                     LastName = dtoSignInUser.LastName,
-                    ProfileImgUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcRufJoXh6ISQsrdzd8h8GbUe_xmfoBNX09w&s",
+                    ProfileImgUrl = "https://i1.sndcdn.com/artworks-BnNpeE3j6Bw9uzt3-imYMvA-t500x500.jpg",
                 };
                 return newUser;
             }
