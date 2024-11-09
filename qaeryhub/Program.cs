@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using qaeryhub.Data;
 using qaeryhub.Services;
 using qaeryhub.Services.Auth;
+using qaeryhub.Services.User;
 using System.Text;
 
 namespace qaeryhub
@@ -39,6 +40,9 @@ namespace qaeryhub
 
             builder.Services.AddScoped<ICRUDPerformance, CRUDPerformance>();
             builder.Services.AddScoped<IAuthIdentity, AuthIdentity>();
+            builder.Services.AddScoped<IUserInfo, UserInfo>();
+
+
             builder.Services.AddControllers();
             builder.Services.AddCors(options => options
                 .AddPolicy("allowReactApp", optPolicy => optPolicy
