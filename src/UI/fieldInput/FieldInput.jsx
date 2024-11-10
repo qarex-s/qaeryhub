@@ -1,12 +1,12 @@
 import React from "react";
 import Style from "./FieldInput.module.css";
-const FieldInput = ({ value, onChange, name, placeholder }) => {
+const FieldInput = ({ type, value, onChange, name, placeholder }) => {
   return (
     //need for refactoring
 
     <>
       <input
-        type="text"
+        type={type}
         value={value}
         onChange={(event) => onChange({ [name]: event.currentTarget.value })}
         className={Style.container__field__input}

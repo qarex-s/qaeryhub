@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { useState } from "react";
 
 const initialState = {
   answerServer: null,
@@ -18,11 +19,13 @@ const initialState = {
   listSpeedPageFromStory: [],
   filterListSpeedPageFromStory: [],
   colorTheme: false,
+  tokenJwt: localStorage.getItem("authToken"),
 };
-
 const api = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed";
 const apiStory = "https://localhost:7013/api/Performance/";
-const tokenJwt = localStorage.getItem("authToken");
+//const tokenJwt = localStorage.getItem("authToken");
+
+console.log("PAGESPEED LOCALSTORAGE", initialState.tokenJwt);
 
 export const fetchDeleteItemFromStory = createAsyncThunk(
   "pageSpeed/fetchDeleteItemFromStory",
@@ -33,7 +36,7 @@ export const fetchDeleteItemFromStory = createAsyncThunk(
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${tokenJwt}`,
+          "Authorization": `Bearer ${initialState.tokenJwt}`,
         },
       });
 
@@ -56,10 +59,10 @@ export const fetchGetItemPageSpeedFromStory = createAsyncThunk(
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${tokenJwt}`,
+          "Authorization": `Bearer ${initialState.tokenJwt}`,
         },
       });
-      console.log("Test request-auth", `${tokenJwt}`);
+      console.log("Test request-auth", `${initialState.tokenJwt}`);
 
       if (!queryResult.ok) {
         throw new Error("Failed to fetch data. \nCode: " + queryResult.status);
@@ -79,7 +82,7 @@ export const fetchGetAllStoryPageSpeed = createAsyncThunk(
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${tokenJwt}`,
+          "Authorization": `Bearer ${initialState.tokenJwt}`,
         },
       });
       if (!dataPageSpeed.ok) {
@@ -104,7 +107,7 @@ export const fetchItemPageSpeedFromStory = createAsyncThunk(
         method: "GET",
         headers: {
           "Content-Type": "appliaction/json",
-          "Authorization": `Bearer ${tokenJwt}`,
+          "Authorization": `Bearer ${initialState.tokenJwt}`,
         },
       });
       if (!dataPageSpeed.ok) {
@@ -178,6 +181,9 @@ const pageSpeedSlice = createSlice({
     },
     changeTheme(state) {
       state.colorTheme = !state.colorTheme;
+    },
+    setAuthToken(state, action) {
+      state.tokenJwt = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -257,4 +263,5 @@ export const {
   addSearchingError,
   filterListStory,
   changeTheme,
+  setAuthToken,
 } = pageSpeedSlice.actions;

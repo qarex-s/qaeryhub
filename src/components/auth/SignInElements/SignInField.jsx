@@ -3,59 +3,94 @@ import React from "react";
 import FieldInput from "../../../UI/fieldInput/FieldInput";
 import BtnSimple from "../../../UI/btnSimple/BtnSimple";
 import Style from "./SignInField.module.css";
-
+import { makeRequestToSignIn } from "../../../data/redux/slices/authSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 const SignInField = ({ setLoginType }) => {
-  const [loginFieldValue, setLoginFieldValue] = useState({
+  const [signInFieldValue, setSignInFieldValue] = useState({
     firstName: "",
     lastName: "",
-    login: "",
+    userName: "",
     email: "",
     password: "",
     confirmPass: "",
   });
 
-  const handleLoginUser = (eventValue) => {
-    setLoginFieldValue({ ...loginFieldValue, ...eventValue });
+  const [someError, setSomeError] = useState("");
+  const [succesfullRegister, setSuccesfullRegister] = useState(false);
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const handleSignInUser = (eventValue) => {
+    setSignInFieldValue({ ...signInFieldValue, ...eventValue });
+  };
+  const handleSendRequestToSignInUser = () => {
+    for (const key in signInFieldValue) {
+      if (signInFieldValue[key] == null) {
+        setSomeError("Fill all fields ");
+        break;
+      }
+    }
+    if (someError == "") {
+      dispatch(makeRequestToSignIn({ signInFieldValue: signInFieldValue }));
+      setSuccesfullRegister(true);
+      console.log("signIn field: ", signInFieldValue);
+      setLoginType((prev) => !prev);
+    }
   };
 
   return (
     <div className={Style.container__login__field}>
       <FieldInput
-        value={loginFieldValue.firstName}
-        onChange={handleLoginUser}
+        value={signInFieldValue.firstName}
+        onChange={handleSignInUser}
         placeholder={"FIRST_NAME"}
         name="firstName"
+        type="text"
       />
       <FieldInput
-        value={loginFieldValue.lastName}
-        onChange={handleLoginUser}
+        value={signInFieldValue.lastName}
+        onChange={handleSignInUser}
         placeholder={"LAST_NAME"}
         name="lastName"
+        type="text"
       />
       <FieldInput
-        value={loginFieldValue.login}
-        onChange={handleLoginUser}
-        name="login"
-        placeholder={"LOGIN"}
+        value={signInFieldValue.login}
+        onChange={handleSignInUser}
+        name="userName"
+        placeholder={"USERNAME"}
+        type="text"
       />
       <FieldInput
-        value={loginFieldValue.email}
-        onChange={handleLoginUser}
+        value={signInFieldValue.email}
+        onChange={handleSignInUser}
         placeholder={"EMAIL"}
         name="email"
+        type="text"
       />
       <FieldInput
-        value={loginFieldValue.password}
-        onChange={handleLoginUser}
+        value={signInFieldValue.password}
+        onChange={handleSignInUser}
         placeholder={"PASSWORD"}
         name="password"
+        type="password"
       />
       <FieldInput
-        value={loginFieldValue.confirmPass}
-        onChange={handleLoginUser}
+        value={signInFieldValue.confirmPass}
+        onChange={handleSignInUser}
         placeholder={"CONFIRM PASS"}
         name="confirmPass"
+        type="password"
       />
+      <span style={someError == "" ? { color: "red" } : { display: "none" }}>
+        {someError}
+      </span>
+      <span
+        style={succesfullRegister ? { color: "purple" } : { display: "flex" }}
+      >
+        {someError}
+      </span>
       <div
         style={{
           width: "60%",
@@ -65,7 +100,7 @@ const SignInField = ({ setLoginType }) => {
         }}
       >
         <BtnSimple onClick={setLoginType}>Back to LOGIN</BtnSimple>
-        <BtnSimple>Register</BtnSimple>
+        <BtnSimple onClick={handleSendRequestToSignInUser}>Register</BtnSimple>
       </div>
     </div>
   );

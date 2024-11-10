@@ -3,20 +3,24 @@ import Style from "./LoginField.module.css";
 import FieldInput from "../../../UI/fieldInput/FieldInput";
 import BtnSimple from "../../../UI/btnSimple/BtnSimple";
 import { makeRequestToLogin } from "../../../data/redux/slices/authSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const LoginField = ({ setLoginType }) => {
   const [loginFieldValue, setLoginFieldValue] = useState({
     login: "",
     pass: "",
   });
-
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handleLoginUser = (eventValue) => {
     setLoginFieldValue({ ...loginFieldValue, ...eventValue });
   };
-
+  if (isAuthenticated) {
+    navigate("/");
+  }
   const handleSendRequestToLoginUser = () => {
     dispatch(makeRequestToLogin({ loginFieldValue: loginFieldValue }));
   };
@@ -29,12 +33,14 @@ const LoginField = ({ setLoginType }) => {
         value={loginFieldValue.login}
         onChange={handleLoginUser}
         name="login"
+        type="text"
       />
       <FieldInput
         placeholder={"PASSWORD"}
         value={loginFieldValue.pass}
         onChange={handleLoginUser}
         name="pass"
+        type="password"
       />
       <div
         style={{
